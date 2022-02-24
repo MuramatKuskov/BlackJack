@@ -1,0 +1,385 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+	.container{
+		max-width: 970px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container, .btn{
+		max-width: 750px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.container, .btn{
+		max-width: none;
+		font-size: 12px;
+		margin: 0 10px;
+	}
+}
+
+header {
+	background-color: hsla(220, 81%, 40%, 1.0);
+	height: 10.7vh;
+}
+
+header h1 {
+	margin-bottom: 20px;
+	text-align: center;
+	position: relative;
+	top: 20px;
+}
+
+@media (max-height: 510px){
+	header h1{
+		top: 10px;
+	}
+}
+
+@media (max-height: 394px){
+	header h1{
+		top: 3px;
+	}
+}
+
+nav {
+	z-index: 99;
+	background-color: black;
+	position: sticky;
+	top: 0px;
+	color: hsla(220, 100%, 100%, 1.0);
+	font-size: 20px;
+	height: 5.3vh;
+}
+
+@media (max-height: 550px) {
+	header, nav{
+		font-size: 14px;
+	}
+}
+
+nav h3 {
+	float: left;
+	margin-right: 20px;
+	position: relative;
+	top: 10px;
+}
+
+@media (max-height: 729px) {
+	nav h3{
+		top: 5px;
+	}
+}
+
+@media (max-height: 615px) {
+	nav h3{
+		top: 1px;
+	}
+}
+
+@media (max-width: 403px) {
+	.container{
+		font-size: 10px;
+	}
+}
+
+
+li {
+	display: inline-block;
+	padding: 13.5px 0;
+}
+
+@media (max-height: 729px) {
+	li{
+		padding: 10px 0;
+	}
+}
+
+@media (max-height: 615px) {
+	li{
+		padding: 5px 0;
+	}
+}
+
+.navig li:hover {
+	background: #117bff;
+  cursor: pointer; 
+  transition: background .5s;
+}
+
+.rules {
+	float: right;
+	position: relative;
+	padding: 20px 10px;
+	top: 7px;
+	right: 30px;
+	color: aquamarine;
+	border: 1px solid black;
+	border-radius: 35% 10% 50% 10%;
+	background-color: #00547be8;
+	width: 69.8px;
+	height: 64px;
+	overflow: hidden;
+	transition: width 2s, height 1.5s 0.35s;
+}
+
+.rules:hover {
+	cursor: pointer;
+	width: 350px;
+	height: 400px;
+}
+
+
+/*.rules ul{
+	display: block;
+}*/
+
+.rules :first-child {
+	text-align: center;
+}
+
+.rules ul li{
+	display: block;
+	color: #20d000;
+	line-height: 20px;
+}
+
+
+main {
+	max-width: 100%;
+	min-height: 78.66vh;
+	background-image: url(https://img5.goodfon.ru/wallpaper/nbig/d/53/microsoft-nostalgia-solitaire.jpg);
+	background-position: center -100px;
+}
+
+main .container>img {
+	max-width: 132px;
+	min-width: 100px;
+	position: relative;
+	left: 42.5%;
+	top: 50px;
+	box-shadow: 5px 5px 9px #000;
+}
+
+@media (max-width:  1200px){
+	main .container>img{
+		left: 41%;
+	}
+}
+
+@media (max-width:  992px){
+	main .container>img{
+		left: 38.5%;
+	}
+}
+
+@media (max-width:  720px){
+	main .container>img{
+		left: 35.5%;
+	}
+}
+
+@media (max-width:  575px){
+	main .container>img{
+		left: 32.5%;
+	}
+}
+
+@media (max-width:  475px){
+	main .container>img{
+		left: 28.5%;
+	}
+}
+
+@media (max-height:  630px){
+	.container img{
+		max-width: 120px;
+	}
+}
+
+
+.phand {
+	max-width: 132px;
+	height: 176px;
+	position: relative;
+	left: 42.5%;
+	top: 170px;
+	text-align: center;
+	border: 3px solid skyblue;
+	border-radius: 10px;
+	animation-name: blink;
+	animation-timing-function: linear;
+	animation-duration: 1.26s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  40% {
+    opacity: 0.4;
+  }
+}
+
+.phand p {
+	position: relative;
+	top: 77px;
+	color: skyblue;
+}
+
+@media (max-width: 992px) {
+	.phand p {
+		top: 50px;
+	}
+}
+
+@media (max-width: 767px) {
+	.phand p {
+		top: 50px;
+	}
+}
+
+.place {
+	display: inline-block;
+	max-width: 1300px;
+	height: 176px;
+	position: relative;
+	bottom: 307px;
+	z-index: 1;
+}
+
+.pholder {
+	display:inline-block;
+	transition: all 0.165s;
+}
+
+
+@media (max-width: 1200px) {
+	.phand, .pholder img {
+		max-width: 109.125px;
+		max-height: 145.5px;
+	}
+}
+
+@media (max-width: 992px) {
+	.phand, .pholder img {
+		max-width: 100.375px;
+		max-height: 135.5px;
+		top: 170px;
+	}
+}
+
+@media (max-width: 767px) {
+	.phand, .pholder img {
+		max-width: 95.22px;
+		max-height: 126.96px;
+		top: 200px;
+	}
+}
+
+
+@media (max-height: 805px) {
+		.phand, .pholder img {
+			top: 137px;
+		}
+}
+
+@media (max-height: 696px) {
+		.phand, .pholder img {
+			top: 80px;
+		}
+}
+
+@media (max-height: 630px) {
+		.phand, .pholder img {
+			max-width: 85px;
+			max-height: 106px;
+			top: 50px;
+		}
+}
+
+
+.place img {
+	max-width: 132px;
+	position: relative;
+}
+
+
+.btn {
+	display: flex;
+	position: absolute;
+	min-width: 30%;
+	text-align: center;
+	float: right;
+	right: 27%;
+	top: 64vh;
+	z-index: 2;
+}
+
+
+/*@media (max-width: 992px) {
+	.btn {
+		top: 21vh;
+	}
+}
+
+@media (max-width: 767px) {
+	.btn {
+		top: 18vh;
+	}
+}
+
+@media (max-height: 805px) {
+	.btn {
+		top: 20vh;
+	}
+}
+
+@media (max-height: 696px) {
+	.btn {
+		top: 14vh;
+	}
+}*/
+
+#score{
+	background-color: #485556;
+	float: left;
+	min-width: 30%;
+	border: 1px solid black; border-radius: 7px;
+	text-align: left;
+	padding: 10px 5px;
+	flex: 33.333%;
+	margin: 0 4px;
+}
+
+#hit, #stand {
+	background-color: #2B4A33;
+	min-width: 30%;
+	border: 1px solid black; border-radius: 7px;
+	padding: 10px 0;
+	flex: 33.333%;
+	margin: 0 4px;
+}
+
+#hit:hover, #stand:hover {
+  background: #046922;
+  cursor: pointer; 
+  transition: background .5s;  
+}
+
+footer{
+	background-color: hsla(220, 81%, 40%, 1.0);
+	height: 5.3vh;
+}
+

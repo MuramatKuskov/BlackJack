@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Black Jack</title>
+		<link href='mainstyle.css' rel='stylesheet' />
+		<meta http-equiv="Content-type" content="text/html" charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<script src="./main.js" async></script>
+	</head>
+	<body>
+		<header>
+			<div class='container'>
+				<h1>Good Luck & Have Fun!</h1>
+			</div>
+		</header>
+
+		<nav>
+				<div class='container'>
+					<h3>Check my other projects:</h3>
+					<ul class="navig">
+						<li><a href="./rpc.html">Rock, paper, scissors</a></li>
+						<li>None (yet)</li>
+						<li>None (yet)</li>
+					</ul>
+					<div class="rules">
+						<h4 class='rules__el1'>Rules</h4>
+						<br>
+						<ul class='rules__ul'>
+							<li class='rules__li'>Goal: score more points than opponent,<br> but if 22 and more you lose</li>
+							<li class='rules__li'>Numbered cards values = number</li>
+							<li class='rules__li'>Ace = 1 if your current score more<br> than 11 and 11 if your current score <11</li>
+							<li class='rules__li'>King = 4</li>
+							<li class='rules__li'>Queen = 3</li>
+							<li class='rules__li'>Jack = 2</li>
+						</ul>
+					</div>
+				</div>
+		</nav>
+
+		<main>
+			<div class='container'>
+				<img src="https://i.ibb.co/wwQcr7y/back-blue-2-large-1024x1024.png">
+
+				<div class="phand" id='phand'>
+					<p>Click to play!</p>
+				</div>
+
+				<div class="place">
+					<div class="pholder" id="p1"></div>
+					<div class="pholder" id="p2"></div>
+					<div class="pholder" id="p3"></div>
+					<div class="pholder" id="p4"></div>
+					<div class="pholder" id="p5"></div>
+					<div class="pholder" id="p6"></div>
+					<div class="pholder" id="p7"></div>
+					<div class="pholder" id="p8"></div>
+					<div class="pholder" id="p9"></div>   <!--макс 9 карт на руках-->
+				</div>
+
+				<div class="btn">
+					<h2 id='score'>Score:</h2>
+					<h2 id="hit">Hit</h2>
+					<h2 id="stand">Stand</h2>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class='container'>
+				<h4>Made by @Muramat_Kuskov</h4>
+				<p>&copy; Overdose</p>
+			</div>
+		</footer>
+	</body>
+</html>

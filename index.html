@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Black Jack</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href='newstyle.css' rel='stylesheet' />
+	<meta http-equiv="Content-type" content="text/html" charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<script src="./main.js" async></script>
+</head>
+
+<body>
+	<header>
+		<div class='container'>
+			<h1>Good Luck & Have Fun!</h1>
+		</div>
+	</header>
+
+	<!-- <nav>
+				<div class='container'>
+					<h3>Check my other projects:</h3>
+					<ul class="navig">
+						<li><a href="./rpc.html">Rock, paper, scissors</a></li>
+						<li>None (yet)</li>
+						<li>None (yet)</li>
+					</ul>
+					<br>
+				</div>
+		</nav> -->
+
+	<main>
+		<div class='container'>
+			<div class="rules">
+				<h4 class='rules__el1'>Rules</h4>
+				<br>
+				<ul class='rules__ul'>
+					<li class='rules__li'>Goal: score more points than opponent,<br> but if 22 and more you lose</li>
+					<li class='rules__li'>Numbered cards values = number</li>
+					<li class='rules__li'>Ace = 1 if your current score more<br> than 11 and 11 if your current score <11<
+							/li>
+					<li class='rules__li'>King = 4</li>
+					<li class='rules__li'>Queen = 3</li>
+					<li class='rules__li'>Jack = 2</li>
+				</ul>
+			</div>
+			<div class="grid">
+				<div class="grid__body">
+					<div class="grid__deck"><img src="https://i.ibb.co/wwQcr7y/back-blue-2-large-1024x1024.png"></div>
+					<div class="grid__opponent"></div>
+					<div class="grid__start">
+						<p>Click to play!</p>
+					</div>
+					<div class="grid__place" id="p1"></div>
+					<div class="grid__place" id="p2"></div>
+					<div class="grid__place" id="p3"></div>
+					<div class="grid__place" id="p4"></div>
+					<div class="grid__place" id="p5"></div>
+					<div class="grid__place" id="p6"></div>
+					<div class="grid__place" id="p7"></div>
+					<div class="grid__place" id="p8"></div>
+					<div class="grid__place" id="p9"></div>
+				</div>
+			</div>
+			<div class="btn">
+				<p id='score'>Score:</p>
+				<p id="hit">Hit</p>
+				<p id="stand">Stand</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class='container'>
+			<p>Made by @Muramat_Kuskov</p>
+			<p>ki6org1488@gmail.com</p>
+		</div>
+	</footer>
+</body>
+
+</html>
